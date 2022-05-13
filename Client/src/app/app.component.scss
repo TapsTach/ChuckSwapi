@@ -1,0 +1,31 @@
+ul.menu-items {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 1rem;
+  li.menu-item {
+    border: solid;
+    border-radius: 10px;
+    padding: 0.25rem 1rem;
+    width: 120px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+  }
+  li.menu-item.active::after {
+    display: block;
+    height: 6px;
+    content: "";
+    background: #f2bd0d;
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    border-radius: 10px;
+    transition: opacity 2000ms ease-in-out;
+    right: 0;
+  }
+  li.menu-item:hover {
+    box-shadow: white 0 0 3px 2px;
+  }
+}

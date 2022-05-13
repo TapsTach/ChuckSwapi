@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="search-input">
+    <input type="search" #search placeholder="search...">
+  </div>
+  <div class="segment" >
+    <h2>Jokes</h2>
+    <ul class="jokes" *ngIf="searchResult?.jokes?.length">
+      <li class="joke-item" [title]="joke.value" *ngFor="let joke of searchResult.jokes">{{joke.value}}</li>
+    </ul>
+  </div>
+  <div class="segment">
+    <h2>People</h2>
+    <ul class="people" *ngIf="searchResult?.people?.length">
+      <li *ngFor="let person of searchResult.people">{{person.name}} </li>
+    </ul>
+  </div>
+</div>

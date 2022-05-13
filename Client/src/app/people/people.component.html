@@ -1,0 +1,36 @@
+ <div class="container">
+<table class="people-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Height</th>
+      <th>Mass</th>
+      <th>Hair Color</th>
+      <th>Skin Color</th>
+      <th>Eye Color</th>
+      <th>Birth Year</th>
+      <th>Gender</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let person of result?.results">
+      <td>{{person.name}}</td>
+      <td>{{person.height}}</td>
+      <td>{{person.mass}}</td>
+      <td>{{person.hairColor}}</td>
+      <td>{{person.skinColor}}</td>
+      <td>{{person.eyeColor}}</td>
+      <td>{{person.birthYear}}</td>
+      <td>{{person.gender}}</td>
+    </tr>
+  </tbody>
+</table>
+<div class="d-flex justify-content-end buttons py-3">
+  <button class="mx-2"  [disabled]="!result.previous" (click)="getPeople(result.previous)">
+    {{'<<'}} Prev
+  </button>
+  <button class="mx-2" [disabled]="!result.next" (click)="getPeople(result.next)">
+    {{'>>'}} Next
+  </button>
+</div>
+ </div>

@@ -1,0 +1,38 @@
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  margin-block: 3rem;
+  overflow: auto;
+  background: #ffffff1a;
+  padding: 2rem;
+  border-radius: 23px;
+}
+ul.categories {
+  list-style: none;
+  li {
+    padding: 7px 1rem;
+    margin-bottom: 1px;
+    background: #ffffff1a;
+    border-bottom: solid 1px #818181;
+  }
+  li.active {
+    border-left: orange solid 11px;
+  }
+}
+.joke {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 24px;
+}
+button {
+  padding: 1rem 5rem;
+  font-size: 1.3rem;
+}
+p.content {
+  font-size: 1.5rem;
+  text-align: center;
+}

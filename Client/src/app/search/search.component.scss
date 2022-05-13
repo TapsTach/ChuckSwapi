@@ -1,0 +1,33 @@
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  margin-block: 3rem;
+  overflow: auto;
+  background: #ffffff1a;
+  padding: 2rem;
+  border-radius: 23px;
+}
+input[type="search"] {
+  padding: 10px 1rem;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  border: white solid;
+  font-size: 1rem;
+}
+.segment {
+  padding-block: 1rem;
+  border-bottom: solid gray 1px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+li {
+  padding: 9px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+li:hover {
+  background: #ffffff26;
+}

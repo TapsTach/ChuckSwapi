@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-4">
+      <ul class="categories">
+        <li [ngClass]="{active: activeCategory ===cat}" (click)="changeCategory(cat)" *ngFor="let cat of categories">{{cat}}</li>
+      </ul>
+    </div>
+    <div class="col-12 col-sm-8" *ngIf="joke.value">
+      <div class="joke">
+        <p class="content">
+          {{joke.value}}
+        </p>
+        <button (click)="getRandomJoke()">
+          Next
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>

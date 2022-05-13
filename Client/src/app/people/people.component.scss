@@ -1,0 +1,21 @@
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  margin-block: 3rem;
+  overflow: auto;
+  background: #ffffff1a;
+  padding: 2rem;
+  border-radius: 23px;
+}
+table.people-table {
+  text-align: left;
+  width: 100%;
+  border-collapse: collapse;
+  th,
+  td {
+    padding: 6px 16px;
+  }
+  th {
+    background: #ffffff21;
+  }
+}
